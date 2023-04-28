@@ -1,0 +1,61 @@
+
+.wrapper_dialogs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .serch_dialogs input{
+    display: flex;
+    width: 30%;
+    color: #fff;
+    user-select: none;
+    background: transparent;
+    outline: none;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0 20px 10px;
+  }
+  .dialogs_container {
+    display: flex;
+    .dialogs-items{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border-radius: 5px;
+    .dialog-user{
+      display: flex;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px 0 10px 10px;
+      font-size: 16px;
+      color: #fff;
+      transition: .1s ease;
+      text-decoration: none;
+      &:hover {
+        transition: .1s ease;
+        background: #4d4d4d;
+        border-radius: 5px;
+      }
+      .avatar {
+        display: flex;
+        margin-right: 20px;
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-items: center;
+        img {
+           width: 110%;
+        }
+      }
+    }
+   }
+  }
+   .dialog{
+    padding-left: 10px;
+    .message {
+      color: #fff;
+      font-size: 16px;
+    }
+   }
+ }

@@ -1,0 +1,63 @@
+.popup-wrapper {
+  display: none;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  z-index: 100;
+  background: #5a5a5a;
+  border-radius: 6px;
+  padding: 40px 60px;
+
+  .text {
+    user-select: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .createInput {
+    outline: none;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    padding: 5px 14px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 30px 0;
+  }
+
+  .pic {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 10px;
+
+    .addBtn {
+      cursor: pointer;
+      display: flex;
+      user-select: none;
+      font-size: 14px;
+      background: transparent;
+      border: 1px solid #fff;
+      padding: 5px 9px;
+      color: #fff;
+      font-weight: 400;
+      border-radius: 6px;
+    }
+  }
+
+  .create {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 5px 14px;
+    align-self: center;
+    border-radius: 6px;
+    background: transparent;
+  }
+}

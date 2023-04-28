@@ -1,0 +1,43 @@
+@import './header';
+@import './navbar';
+@import './profile';
+@import './posts';
+@import './messages';
+@import './works';
+@import './workPopup';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background: #494949;
+}
+.app-wrapper-content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  grid-area: content;
+}
+.app-wrapper {
+  display: grid;
+  max-width: 1100px;
+  margin: 20px auto;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  gap: 10px;
+  grid-template-areas: 
+  "header header"
+  "nav content";
+  padding: 0 5px;
+}
+
+.active {
+  display: flex;
+}
